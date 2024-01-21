@@ -6,3 +6,4 @@ The visual breathing of the colors has to do with a loop for the color in which 
 
 ![devilsHeart-ezgif com-optimize](https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/622c675a-811d-44e8-a83e-998abe13deae)
 
+![devilsBloom-ezgif com-crop](https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/330b30f2-5d29-4b80-ad83-ef2fb96b7824)
