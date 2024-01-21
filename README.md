@@ -5,3 +5,5 @@ In this prog from the lasts I tried cleaning up the pipeline a little more and r
 The visual breathing of the colors has to do with a loop for the color in which checks if it exceeds a max value of 1.0f in the red channel and if so will reset our color back to 0. Because each cell is birthed in a given "Wave" of reproduction in the population some sections will share the same colors so will breathe in relation to these siblings. (also note the .gif format is chud and had to remove some frames so is a little choppy looking)
 
 ![devilsHeart-ezgif com-optimize](https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/622c675a-811d-44e8-a83e-998abe13deae)
+
+<img width="950" alt="image" src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/ff8888c6-ffc7-4fd6-a5e8-fc4b787b2289">
