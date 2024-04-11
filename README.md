@@ -11,7 +11,7 @@ The visual breathing of the colors has to do with a loop for the color in which 
 
 
 ----------------------------------------------
-<img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_Synapses/assets/76754592/b8f1331f-644d-4b71-826e-2f24b4439292" alt="Cornstarch <3" width="55" height="49"><img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_Synapses/assets/76754592/b8f1331f-644d-4b71-826e-2f24b4439292" alt="Cornstarch <3" width="55" height="49"><img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_Synapses/assets/76754592/b8f1331f-644d-4b71-826e-2f24b4439292" alt="Cornstarch <3" width="55" height="49"><img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_Synapses/assets/76754592/b8f1331f-644d-4b71-826e-2f24b4439292" alt="Cornstarch <3" width="55" height="49">
+<img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/091d6125-d1ed-4f6a-b06a-794447a01e28" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/091d6125-d1ed-4f6a-b06a-794447a01e28" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/091d6125-d1ed-4f6a-b06a-794447a01e28" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/091d6125-d1ed-4f6a-b06a-794447a01e28" alt="Cornstarch <3" width="55" height="49">
 
 
 **The Breakdown:**
