@@ -16,7 +16,23 @@ The visual breathing of the colors has to do with a loop for the color in which 
 
 **The Breakdown:**
 
+  This C++ Program Works With GLSL And OpenGL In Order To Create A Window To Simulate A 2D-Hexagonal Representation Of Conways Game Of Life.
 
+  This Program Uses A Single VAO, VBO, And EBO In Which Is Instantiated At Runtime Dynamically. This Will Hold All The Hexagons On Our Screen In Which Will Represent A Cell In Which Can Have A State Of Either Alive Or Dead.
+
+  During Runtime We Will Run OUr Algorthm In Which Will Feed Into Each Hexagon A Integer In Which Will Represent Its Offset From The Initial Position In The VBO Where "It's" Vertexes Will Lie. This ALlows Each Cell To Have A Single Value In Which Will Allow It To Adjusts Itself (Color, Position, texture, etc.) This Is Also Because We Know Each Cell Will Be Equally Sided So Can "Hard-Code" To Check **n** Vertexes After The Initial One In The Buffer For Even Quicker Updating.
+
+  The Hexagonal Cell Has A Reaction Function In Which Will Count The Amount Of Alive Adjacent Neighbors It Has By Checking Around It In The 2D-Cell Map. At Every Cycle Of The Main Loop, From The Bottom Row, From Left To Right We Will Tell Each Cell To "React" To Its Surroundings. This Will Proceed From The Lowest Row Of Hexagons All The Way Up To The Top, Starting At Each Row From The Left-Most Hexagon. This Is Very Important In The Update Routine As To Cutdown On Runtime As Well As Space Complexity (Also Because I Like Making Myself Suffer And Learning The Hard Way) I Updated Each Cell In-Place In The 2D-Cell Map. 
+
+  Updating The Cells In-Place Means That Right After Executing Their React Function And Dying Or Becoming Alive The Cell Will Update Its State. This Isn't A Major Error And In Many Automatas I've Made It's Been There But Also Gives Some Depth To The Design As What This Bug/Feature Can Do Is Lets Say We Have A Drop Of Water Represented As One Of Our Hexagons:
+
+  If This Water Was To Flow From Right -> Left, Represented By Turning Off One Hexagon In The 2D-CellMap And Turning On THe Hexagon To The Left Of It. 
+  
+  Because We Are Our 2D Array In Which We Are Indexing And Calling Each Reaction Of A Given Cell We Will Index from:
+  
+  0 -> ROW_SIZE
+
+  Because Of This,
 
 <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/19b4d951-4221-416e-9f90-5f5470c25269" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/19b4d951-4221-416e-9f90-5f5470c25269" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/19b4d951-4221-416e-9f90-5f5470c25269" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/19b4d951-4221-416e-9f90-5f5470c25269" alt="Cornstarch <3" width="55" height="49">
 
