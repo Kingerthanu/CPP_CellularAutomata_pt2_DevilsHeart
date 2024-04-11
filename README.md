@@ -28,11 +28,15 @@ The visual breathing of the colors has to do with a loop for the color in which 
 
   If This Water Was To Flow From Right -> Left, Represented By Turning Off One Hexagon In The 2D-CellMap And Turning On THe Hexagon To The Left Of It. 
   
-  Because We Are Our 2D Array In Which We Are Indexing And Calling Each Reaction Of A Given Cell We Will Index from:
+  Because We Are Our 2D-Array In Which We Are Indexing And Calling Each Reaction Of A Given Cell We Will Index from:
   
-  0 -> ROW_SIZE
+  0 -> ROW_SIZE (Could Be Any Axis, Usually Are Moving Along One Direction Never Anti-Paralell)
 
-  Because Of This,
+  Because Of This, If We Update A Water Cell At CELL_MAP[Index] And At This Cell We Will Flow Left We Basically Are Telling CELL_MAP[Index - 1] To Now Become A Water Cell While Telling Our Cell (CELL_MAP[Index] To Delete Its Reference To Being A Water Cell). 
+
+  In This Case We Get Expected Behaivor As When We Update A Cell Behind Us We Don't Call Its React Until We Cycle This For-Loop Again (In Our Main Loop) This Means Every Tick Of The Game Loop Will Match Up With The Execution Tick Cycle Of Each Cells Reactions To Avoid Maybe Two Reaction Ticks Per Cycle.
+
+  In The Case Where This Becomes Bad Is When The Water Cell Wants To Move Right, Paralell To The Way We Are "Scanning" Our 2D-Map. This Is Because Unlike The Other Case Where CELL_MAP[Index - 1] Is Forced TO Be A Cell BEHIND The Current Main Loop Reaction For THis Tick, We Instead Update CELL_MAP[Index + 1] Which Is The Cell In Front Of Us Which Causes Us To Then Accidentally Update The Cell Infront Of Us In Which We Are Currently Checking. This Causes Problems As Now Next Cell React Call Will Be At Index++ Which Will Be At Index + 1. So We Basically Cause A Compounding Effect, As Without Any Flags We Will Now Treat This Cell As A Fresh Water Cell To Be Checked THIS SAME Main Loop Cycle. This Will Then Update CELL_MAP[Index+1]. This Will Keep Going Until We Hit A Wall So On The Right Side We Will Hit The Wall In One Check Of This Row While On The Left Side We Would've Only Moved One Cell. So Instead Of Taking Multiple Cycles To Move In The Rightward Direction Like It Does In The Leftward, We Are Basically Rushing Our Town Hall So In One Main Loop Cycle We Will Have Th
 
 <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/19b4d951-4221-416e-9f90-5f5470c25269" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/19b4d951-4221-416e-9f90-5f5470c25269" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/19b4d951-4221-416e-9f90-5f5470c25269" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/19b4d951-4221-416e-9f90-5f5470c25269" alt="Cornstarch <3" width="55" height="49">
 
