@@ -23,6 +23,9 @@ The visual breathing of the colors has to do with a loop for the color in which 
 
 ----------------------------------------------
 
+<img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/5f277365-2a2c-4488-9d74-7e709dedc618" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/5f277365-2a2c-4488-9d74-7e709dedc618" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/5f277365-2a2c-4488-9d74-7e709dedc618" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/5f277365-2a2c-4488-9d74-7e709dedc618" alt="Cornstarch <3" width="55" height="49">
+
+
 **Features:**
 
 ![devilsHeart-ezgif com-optimize](https://github.com/Kingerthanu/CPP_CellularAutomata_pt2_DevilsHeart/assets/76754592/622c675a-811d-44e8-a83e-998abe13deae)
